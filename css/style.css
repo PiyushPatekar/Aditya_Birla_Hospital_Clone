@@ -1,0 +1,136 @@
+/* Navbar */
+.navbar{
+    background:#ffe468 !important;
+    padding:18px 25px;
+}
+.navbar-nav{
+    margin:auto;
+}
+.navbar-nav .nav-link{
+    color:#000;
+    font-size:20px;
+    font-weight:600;
+    padding:10px 22px;
+    transition:.3s;
+}
+.navbar-nav .nav-link:hover{
+    color:#b11f1f;
+}
+.navbar-nav .nav-item.active .nav-link{
+    color:#b11f1f;
+}
+/* Dropdown */
+.dropdown-menu{
+    border:none;
+    border-radius:0;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    padding:0;
+}
+
+.dropdown-item{
+    padding:12px 20px;
+    font-size:18px;
+}
+
+.dropdown-item:hover{
+    background: rgb(222, 220, 220);
+    color:#b11f1f;
+}
+
+/* Search Box */
+.form-control{
+    width:180px;
+    border-radius:25px;
+}
+
+.btn{
+    border-radius:25px;
+}
+
+.nav-item{
+    margin:0 12px;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+footer a{
+    color: black;          /* Change to any color you want */
+    text-decoration: none; /* Removes underline */
+}
+
+footer a:hover{
+    color: #b11f1f;        /* Hover color (optional) */
+}
+
+footer a:visited{
+    color: black;          /* Keeps visited links black */
+}
+.ft-color{
+    background-color: #fd7e14;
+}
+.ft-color p{
+    color: white;
+}
+.symbol{
+    color: #000;
+    font-size: 5px;
+}
+h1{
+    color: #000;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: solid 4px #fd7e14;
+    display: inline-block;
+}
+h2{
+    color: #000;
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+}
+h3{
+    font-size: 25px;
+    border-bottom: solid 2px #b11f1f;
+}
+h4{
+    font-family: 'Poppins' ,sans-serif;
+    color: #b11f1f;
+}
+
+
+.transform{
+    background-color: #ffe468;
+    border:1px solid #ddd;
+    border-radius:20px;
+    padding:15px 40px;
+    transition:.3s;
+    height: 190px;
+    width: 240px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.transform:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+.bg-color{
+    background-color: #ffe468;
+}
+.transform2{
+    background-color: #fff;
+    border:1px solid #fff;
+    box-shadow: 2px 4px 3px rgb(159, 158, 158);
+    border-radius:10px;
+    padding:15px 40px;
+    transition:.3s;
+    height: 190px;
+    width: 350px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
