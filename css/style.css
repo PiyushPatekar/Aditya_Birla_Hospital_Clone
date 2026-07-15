@@ -1,8 +1,16 @@
 /* Navbar */
+
 .navbar{
     background:#ffe468 !important;
     padding:18px 25px;
 }
+
+.sticky-top{
+    position:sticky;
+    top:0;
+    z-index:1030;
+}
+
 .navbar-nav{
     margin:auto;
 }
@@ -39,7 +47,8 @@
 
 /* Search Box */
 .form-control{
-    width:180px;
+    width:100%;
+    max-width:180px;
     border-radius:25px;
 }
 
@@ -98,7 +107,10 @@ h4{
     font-family: 'Poppins' ,sans-serif;
     color: #b11f1f;
 }
-
+html,
+body{
+    overflow-x:hidden;
+}
 
 .transform{
     background-color: #ffe468;
@@ -106,8 +118,11 @@ h4{
     border-radius:20px;
     padding:15px 40px;
     transition:.3s;
-    height: 190px;
-    width: 240px;
+    width:100%;
+    max-width:240px;
+    min-height:190px;
+    height:auto;
+    margin:auto;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -127,10 +142,258 @@ h4{
     border-radius:10px;
     padding:15px 40px;
     transition:.3s;
-    height: 190px;
-    width: 350px;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width:100%;
+    max-width:350px;
+    min-height:150px;
+    height:auto;
+    margin:auto;
+}
+
+.view-all{
+    font-family: 'Poppins',sans-serif;
+    color:#9d1a1a;
+    text-decoration:none;
+    font-weight:600;
+    align-items: end;
+}
+
+.doctor-card{
+    background:#fff;
+    border-radius:20px;
+    padding: 3px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+    height:100%;
+}
+
+.doctor-card:hover{
+    transform:translateY(-8px);
+}
+
+/* Image */
+
+.doctor-img{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.doctor-img img{
+    width:170px;
+    height:170px;
+    max-width:100%;
+    height:auto;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Button */
+
+.profile-btn{
+    display:block;
+    background:#a61919;
+    color:#fff;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:600;
+    padding:12px;
+    border-radius:0 0 18px 18px;
+    transition:.3s;
+}
+
+.profile-btn:hover{
+    background:#851313;
+    color:#fff;
+}
+
+.feedback-box{
+
+    background:#ffe468;
+    border-radius:20px;
+    padding:40px;
+
+}
+
+.feedback-box iframe{
+    width:100%;
+    height:330px;
+    border-radius:10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.feedback-text{
+
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+    margin-bottom:70px;
+
+}
+
+.view-all{
+
+    color:#9d1a1a;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:600;
+
+}
+
+/* ================= Buttons ================= */
+
+.custom-btn{
+
+    width:50px;
+    height:50px;
+    background:#a61919;
+    border-radius:50%;
+    opacity:1;
+    top:auto;
+    bottom:-70px;
+
+}
+
+.carousel-control-prev{
+
+    left:auto;
+    right:80px;
+
+}
+
+.carousel-control-next{
+
+    right:10px;
+
+}
+
+.custom-btn i{
+
+    color:white;
+    font-size:24px;
+
+}
+
+.custom-btn:hover{
+
+    background:#851515;
+
+}
+
+/* Remove Bootstrap default icon */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+
+    display:none;
+
+}
+
+.whychoose{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 2px 3px 4px gray;
+    background-color: #ffe468;
+    width:100%;
+    max-width:400px;
+    min-height:450px;
+    height:auto;
+    margin:20px auto;
+    border-radius: 1px 70px;
+}
+
+@media (max-width:992px){
+
+.navbar{
+    padding:12px;
+}
+
+.navbar-nav{
+    text-align:center;
+}
+
+.nav-item{
+    margin:8px 0;
+}
+
+.transform,
+.transform2,
+.whychoose{
+    width:100%;
+    max-width:100%;
+}
+
+.feedback-box{
+    padding:20px;
+}
+
+.feedback-text{
+    margin-bottom:20px;
+}
+
+.custom-btn{
+    display:none;
+}
+
+.view-all{
+    font-size:20px;
+}
+
+h1{
+    font-size:26px;
+}
+
+h2{
+    font-size:22px;
+}
+
+h3{
+    font-size:20px;
+}
+
+}
+
+@media (max-width:768px){
+
+.navbar-brand img{
+    width:180px;
+    height:auto;
+}
+
+h1{
+    font-size:24px;
+}
+
+.transform,
+.transform2,
+.whychoose{
+    margin-bottom:20px;
+}
+
+.feedback-box{
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+}
+.footer-bg{
+    background-color: #ffe468 !important;
+}
+picture{
+    display:flex;
+    justify-content:center;
+}
+
 }
