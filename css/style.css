@@ -128,8 +128,10 @@ h2{
     color: #000;
     font-family: 'Poppins',sans-serif;
     font-size: 25px;
+    font-weight: 500;
 }
 h3{
+    font-family: 'Poppins',sans-serif;
     font-size: 25px;
     border-bottom: solid 2px #b11f1f;
 }
@@ -137,34 +139,68 @@ h4{
     font-family: 'Poppins' ,sans-serif;
     color: #b11f1f;
 }
+h6{
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 html,
 body{
     overflow-x:hidden;
+    font-family: 'Poppins' ,sans-serif;
 }
 
 .transform{
+    text-decoration: none;
+    color: black;
     background-color: #ffe468;
-    border:1px solid #ddd;
-    border-radius:20px;
-    padding:15px 40px;
-    transition:.3s;
-    width:100%;
-    max-width:240px;
-    min-height:190px;
-    height:auto;
-    margin:auto;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 15px 40px;
+    transition: .3s;
+    width: 100%;
+    max-width: 240px;
+    min-height: 190px;
+    height: auto;
+    margin: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .transform:hover{
-    transform:translateY(-8px);
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
 }
+
+
+/* Anchor tag */
+
+.transform a {
+    text-decoration: none;
+    color: black;
+}
+
+.transform a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.transform a h5 {
+    color: black;
+}
+
+.transform a:hover h5 {
+    color: #fd7e14;
+}
+
+
 .bg-color{
     background-color: #ffe468;
 }
+
 .transform2{
     background-color: #fff;
     border:1px solid #fff;
@@ -381,17 +417,6 @@ body{
     font-size:20px;
 }
 
-h1{
-    font-size:26px;
-}
-
-h2{
-    font-size:22px;
-}
-
-h3{
-    font-size:20px;
-}
 
 }
 
@@ -682,4 +707,349 @@ td{
     border: 1px solid rgb(224, 224, 224);
     padding-right: 20px;
     padding-left: 5px;
+}
+
+
+
+.health-form-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.health-form-container h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #111111;
+    margin-bottom: 35px;
+}
+
+.health-input {
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid #b20f12;
+    border-radius: 7px;
+
+    padding: 10px 18px;
+
+    font-size: 17px;
+    color: #111111;
+
+    box-sizing: border-box;
+}
+
+
+.health-input::placeholder {
+    color: #667085;
+    opacity: 1;
+}
+
+
+.health-input:focus {
+    outline: none;
+
+    border-color: #b20f12;
+
+    box-shadow: 0 0 0 2px rgba(178, 15, 18, 0.10);
+}
+
+
+.health-date {
+    height: 48px;
+}
+
+
+.health-package {
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid #b20f12;
+    border-radius: 7px;
+
+    padding: 10px 18px;
+
+    font-size: 17px;
+    color: #111111;
+
+    background-color: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.health-message {
+    width: 100%;
+    height: 100px;
+
+    border: 1px solid #b20f12;
+    border-radius: 7px;
+
+    padding: 15px 18px;
+
+    font-size: 17px;
+
+    resize: vertical;
+
+    box-sizing: border-box;
+}
+
+
+
+.health-message::placeholder {
+    color: #667085;
+    opacity: 1;
+}
+
+
+.health-message:focus {
+    outline: none;
+
+    border-color: #b20f12;
+
+    box-shadow: 0 0 0 2px rgba(178, 15, 18, 0.10);
+}
+
+
+
+.health-submit {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 35px;
+
+    background-color: #b20f12;
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+
+.health-submit:hover {
+    background-color: #920d0f;
+}
+
+@media (max-width: 767px) {
+
+    .health-form-container {
+        margin: 25px auto;
+        padding: 0 20px;
+    }
+
+
+    .health-form-container h1 {
+        font-size: 26px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+
+    .health-input {
+        height: 55px;
+    }
+
+
+    .health-package {
+        height: 65px;
+    }
+
+
+    .health-message {
+        height: 100px;
+    }
+
+
+    .health-submit {
+        height: 55px;
+    }
+
+}
+
+.transform3{
+    background-color: #ffe468;
+    border:1px solid #fff;
+    border-radius:10px;
+    padding:15px 40px;
+    transition:.3s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    max-width:430px;
+    min-height:100px;
+    height:auto;
+    margin:auto;
+}
+
+.book-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+    height: 35px;
+
+    background-color: #b21a1a;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 80px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.book-btn .arrow {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 0;
+}
+
+.book-btn:hover {
+    background-color: #8f1111;
+    color: white;
+}
+
+.book-btn:hover .arrow {
+    transform: translateX(6px);
+}
+
+.book-btn .arrow {
+    transition: 0.3s ease;
+}
+
+
+.hservices-form-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+
+.hservices-form-container h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #111111;
+    margin-bottom: 35px;
+}
+
+.hservices-input {
+    width: 100%;
+    height: 30px;
+
+    border: 1px solid #b20f12;
+    border-radius: 7px;
+
+    padding: 10px 18px;
+
+    font-size: 15px;
+    color: #111111;
+
+    box-sizing: border-box;
+}
+
+
+.hservices-input::placeholder {
+    color: #667085;
+    opacity: 1;
+}
+
+
+.hservices-input:focus {
+    outline: none;
+
+    border-color: #b20f12;
+
+    box-shadow: 0 0 0 2px rgba(178, 15, 18, 0.10);
+}
+
+
+.hservices-date {
+    height: 44px;
+}
+
+
+.hservices-package {
+    width: 100%;
+    height: 44px;
+    border-radius: 25px;
+
+    padding: 10px 18px;
+
+    font-size: 15px;
+    color: #111111;
+
+    background-color: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.hservices-message {
+    width: 500px;
+    height: 100px;
+
+    border: 1px solid #b20f12;
+    border-radius: 7px;
+
+    padding: 15px 18px;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+}
+
+
+
+.hservices-message::placeholder {
+    color: #667085;
+    opacity: 1;
+}
+
+
+
+.hservices-message:focus {
+    outline: none;
+
+    border-color: #b20f12;
+
+    box-shadow: 0 0 0 2px rgba(178, 15, 18, 0.10);
+}
+
+
+.hservices-submit {
+    width: 100%;
+    height: 40px;
+
+    border: none;
+    border-radius: 35px;
+
+    background-color: #b20f12;
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+
+.hservices-submit:hover {
+    background-color: #920d0f;
 }
