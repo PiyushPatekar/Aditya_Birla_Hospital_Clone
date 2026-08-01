@@ -262,15 +262,21 @@ body{
 /* Button */
 
 .profile-btn{
-    display:block;
+    
     background:#a61919;
     color:#fff;
     text-decoration:none;
-    font-size:24px;
+    font-size:20px;
     font-weight:600;
+    height: 40px;
+    width: 399px;
     padding:12px;
-    border-radius:0 0 18px 18px;
+    border-radius:0px 0px 18px 18px;
     transition:.3s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
 }
 
 .profile-btn:hover{
@@ -1052,4 +1058,21 @@ td{
 
 .hservices-submit:hover {
     background-color: #920d0f;
+}
+
+.pagination .page-link{
+    color: #920d0f;
+    border-radius:8px;
+    margin:0 5px;
+    height: auto;
+    width: auto;
+    padding:10px 15px;
+    border:1px solid gray;
+    transition:.3s;
+}
+
+.pagination .page-item.active .page-link{
+    background:#920d0f;
+    border-color:gray;
+    color:#fff;
 }
